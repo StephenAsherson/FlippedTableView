@@ -17,8 +17,7 @@
 		DCC2A493168EBD6000D8DF00 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC2A492168EBD6000D8DF00 /* Default@2x.png */; };
 		DCC2A495168EBD6000D8DF00 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC2A494168EBD6000D8DF00 /* Default-568h@2x.png */; };
 		DCC2A498168EBD6100D8DF00 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC2A496168EBD6000D8DF00 /* MainStoryboard_iPhone.storyboard */; };
-		DCC2A49B168EBD6100D8DF00 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC2A499168EBD6100D8DF00 /* MainStoryboard_iPad.storyboard */; };
-		DCC2A49E168EBD6100D8DF00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC2A49D168EBD6100D8DF00 /* ViewController.m */; };
+		DCC2A4A6168EBDCE00D8DF00 /* FlippedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC2A4A5168EBDCE00D8DF00 /* FlippedTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +35,8 @@
 		DCC2A492168EBD6000D8DF00 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DCC2A494168EBD6000D8DF00 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DCC2A497168EBD6100D8DF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		DCC2A49A168EBD6100D8DF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		DCC2A49C168EBD6100D8DF00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DCC2A49D168EBD6100D8DF00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCC2A4A4168EBDCE00D8DF00 /* FlippedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlippedTableViewController.h; sourceTree = "<group>"; };
+		DCC2A4A5168EBDCE00D8DF00 /* FlippedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlippedTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +83,11 @@
 		DCC2A484168EBD6000D8DF00 /* FlippedTableView */ = {
 			isa = PBXGroup;
 			children = (
+				DCC2A4A4168EBDCE00D8DF00 /* FlippedTableViewController.h */,
+				DCC2A4A5168EBDCE00D8DF00 /* FlippedTableViewController.m */,
 				DCC2A48D168EBD6000D8DF00 /* AppDelegate.h */,
 				DCC2A48E168EBD6000D8DF00 /* AppDelegate.m */,
 				DCC2A496168EBD6000D8DF00 /* MainStoryboard_iPhone.storyboard */,
-				DCC2A499168EBD6100D8DF00 /* MainStoryboard_iPad.storyboard */,
-				DCC2A49C168EBD6100D8DF00 /* ViewController.h */,
-				DCC2A49D168EBD6100D8DF00 /* ViewController.m */,
 				DCC2A485168EBD6000D8DF00 /* Supporting Files */,
 			);
 			path = FlippedTableView;
@@ -166,7 +163,6 @@
 				DCC2A493168EBD6000D8DF00 /* Default@2x.png in Resources */,
 				DCC2A495168EBD6000D8DF00 /* Default-568h@2x.png in Resources */,
 				DCC2A498168EBD6100D8DF00 /* MainStoryboard_iPhone.storyboard in Resources */,
-				DCC2A49B168EBD6100D8DF00 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +175,7 @@
 			files = (
 				DCC2A48B168EBD6000D8DF00 /* main.m in Sources */,
 				DCC2A48F168EBD6000D8DF00 /* AppDelegate.m in Sources */,
-				DCC2A49E168EBD6100D8DF00 /* ViewController.m in Sources */,
+				DCC2A4A6168EBDCE00D8DF00 /* FlippedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +196,6 @@
 				DCC2A497168EBD6100D8DF00 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		DCC2A499168EBD6100D8DF00 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCC2A49A168EBD6100D8DF00 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +260,7 @@
 				GCC_PREFIX_HEADER = "FlippedTableView/FlippedTableView-Prefix.pch";
 				INFOPLIST_FILE = "FlippedTableView/FlippedTableView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -283,6 +272,7 @@
 				GCC_PREFIX_HEADER = "FlippedTableView/FlippedTableView-Prefix.pch";
 				INFOPLIST_FILE = "FlippedTableView/FlippedTableView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
