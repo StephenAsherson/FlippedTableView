@@ -46,6 +46,16 @@
     self.tableView.transform = CGAffineTransformMakeRotation(-M_PI);
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, self.tableView.frame.size.width-10);
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, self.tableView.frame.size.width-10);
+}
+
 #pragma mark - Memory Methods
 
 - (void)didReceiveMemoryWarning
